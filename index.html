@@ -420,13 +420,14 @@
         </button>
         <form action="#" class="modal-form">
           <p>Залиште свої дані, ми вам передзвонимо</p>
-          <label>
-            Ім'я
-            <input type="text" />
+          <div class="form-field">
+            <input type="text" class="form-input" />
+            <label class="form-label"> Ім'я </label>
             <svg class="modal-form-icon">
               <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
             </svg>
-          </label>
+          </div>
+
           <label>
             Телефон
             <input type="text" />
@@ -446,7 +447,9 @@
             <textarea type="email" placeholder="Введіть текст"></textarea>
           </label>
           <label class="form-agreement">
-            <input type="checkbox" />Погоджуюся з розсилкою та приймаю
+            <input type="checkbox" class="checkbox" />
+            <span class="icon"></span>
+            Погоджуюся з розсилкою та приймаю
             <a class="form-agreement-link"> Умови договору</a>
           </label>
           <button type="submit" class="modal-btn-submit">Відправити</button>

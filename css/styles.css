@@ -306,7 +306,7 @@ img {
 
 .modal-form label,
 .modal-form input {
-  width: 100%;
+  /* width: 100%; */
 
   border-radius: 4px;
 }
@@ -318,6 +318,31 @@ img {
   outline: #2196f3;
 
   cursor: pointer;
+}
+
+.form-field {
+  width: 100%;
+
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+
+  top: 50%;
+  left: 45px;
+
+  transform: translateY(-50%);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input {
+  width: 100%;
+}
+
+.form-input:focus + .form-label {
+  transform: translate(-25px, -37px);
 }
 
 .modal-form input:hover + svg,
@@ -333,7 +358,7 @@ img {
   letter-spacing: 0.01em;
   color: #757575;
 
-  position: relative;
+  /* position: relative; */
 }
 
 .modal-form input {
@@ -388,13 +413,15 @@ textarea::placeholder {
   height: 18px;
 
   position: absolute;
-  top: 56%;
-  left: 12px;
+  top: 47%;
+  left: 10px;
 
   transform: translateY(-50%);
   fill: #212121;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  margin-left: 5px;
 }
 
 .form-comment {
@@ -438,6 +465,37 @@ label.form-agreement {
 
 .form-agreement-link:hover {
   cursor: pointer;
+}
+
+input[type='checkbox'] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  margin-right: 8px;
+}
+
+.checkbox:checked + .icon {
+  border: #2196f3;
+  background-color: #2196f3;
+  background-image: url(../images/full-check.svg);
 }
 
 .modal-btn-submit {
