@@ -399,7 +399,7 @@
           <label class="footer-form-label">
             Підпишіться на розсилку
             <div class="footer-form-holder">
-              <input type="email" placeholder="E-mail" required />
+              <input type="email" placeholder="E-mail" required name="email" />
               <button type="submit">
                 Підписатися
                 <svg class="footer-form-icon">
@@ -421,21 +421,36 @@
         <form action="#" class="modal-form">
           <p>Залиште свої дані, ми вам передзвонимо</p>
           <div class="form-field">
-            <input type="text" class="form-input" placeholder=" " />
+            <input
+              type="text"
+              class="form-input"
+              placeholder=" "
+              name="username"
+            />
             <label class="form-label"> Ім'я </label>
             <svg class="modal-form-icon">
               <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
             </svg>
           </div>
           <div class="form-field">
-            <input type="text" class="form-input" placeholder=" " />
+            <input
+              type="text"
+              class="form-input"
+              placeholder=" "
+              name="telephone"
+            />
             <label class="form-label"> Телефон </label>
             <svg class="modal-form-icon">
               <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
             </svg>
           </div>
           <div class="form-field">
-            <input type="email" class="form-input" placeholder=" " />
+            <input
+              type="email"
+              class="form-input"
+              placeholder=" "
+              name="email"
+            />
             <label class="form-label"> Пошта </label>
             <svg class="modal-form-icon">
               <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
@@ -447,7 +462,7 @@
             <textarea type="email" placeholder="Введіть текст"></textarea>
           </label>
           <label class="form-agreement">
-            <input type="checkbox" class="checkbox" />
+            <input type="checkbox" class="checkbox" name="newsletter" />
             <span class="icon"></span>
             Погоджуюся з розсилкою та приймаю
             <a class="form-agreement-link"> Умови договору</a>
